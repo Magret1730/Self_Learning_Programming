@@ -1,0 +1,22 @@
+from itertools import chain
+for i in range(5):
+    print(i, end="")
+print()
+
+for i in range(5, 10):
+    print(i, end=" ")
+print()
+
+res = chain(range(4), range(10, 20, 2))
+print("Concantenating the result:")
+for i in res:
+    print(i, end=",")
+print()
+
+fruits = ['apple', 'banana', 'orange', 'pawpaw']
+for i in range(len(fruits)):
+    print(fruits[i])
+
+for i in range(21):
+    if (i % 2) != 0:
+        print(i)
