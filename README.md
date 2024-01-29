@@ -19,4 +19,4 @@ Follow along with my recent venture into JavaScript, where I document tutorials,
 coding exercises, and any pertinent information. I am currently learning with Traversy Media
 Modern Javascript course.
 
-Happy coding!
+Happy coding!!!
