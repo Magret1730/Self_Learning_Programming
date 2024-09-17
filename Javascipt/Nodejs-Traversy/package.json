@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-traversy",
+  "version": "1.0.0",
+  "description": "Nodejs Traversy crash course",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "dotenv nodemon server2.js"
+  },
+  "author": "Oyedele Abiodun Magret",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2",
+    "nodemon": "^3.1.4"
+  }
+}

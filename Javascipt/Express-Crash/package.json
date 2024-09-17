@@ -1,0 +1,20 @@
+{
+  "name": "express-crash",
+  "version": "1.0.0",
+  "description": "A crash course on Express.js with Traversy",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "keywords": [],
+  "author": "Oyedele Abiodun Magret",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
