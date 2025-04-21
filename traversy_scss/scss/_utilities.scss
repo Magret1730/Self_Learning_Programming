@@ -1,0 +1,33 @@
+.container {
+    max-width: 68.75rem;
+    padding: 0 1.875rem;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+// Margin and padding class // I dont understans this though
+$spaceamounts: (
+    1,
+    2,
+    3,
+    4,
+    5
+);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        margin: #{$space}rem 0;
+    }
+}
