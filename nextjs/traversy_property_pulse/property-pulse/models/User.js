@@ -4,18 +4,18 @@ const UserSchema = new Schema({
   email: {
     type: String,
     unique: [true, 'Email already exists'],
-    required: [true, 'Email is required']
+    required: [true, 'Email is required'],
   },
   username: {
     type: String,
-    required: [true, 'Username is required']
+    required: [true, 'Username is required'],
   },
   image: {
-    type: String
+    type: String,
   },
   bookmarks: {
     type: Schema.Types.ObjectId,
-    ref: 'Property'
+    ref: 'Property',
   }
 }, {
   timestamps: true
