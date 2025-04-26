@@ -33,7 +33,7 @@ import PropertyDetails from "@/components/PropertyDetails";
 import connectDB from "@/config/database";
 import Property from "@/models/Property";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa"
+import { FaArrowLeft } from "react-icons/fa";
 
 const PropertyPage = async ({ params }) => {
     await connectDB();
