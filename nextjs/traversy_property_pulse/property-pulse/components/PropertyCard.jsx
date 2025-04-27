@@ -23,7 +23,8 @@ const PropertyCard = ({ property }) => {
   return ( 
     <div className="rounded-xl shadow-md relative">
       <img
-        src={`/images/properties/${property.images[0]}`}
+        // src={`/images/properties/${property.images[0]}`} // This works for images in the public folder
+        src={`${property.images[0]}`} // This works with cloudinary
         alt=""
         width="0"
         height="0"
