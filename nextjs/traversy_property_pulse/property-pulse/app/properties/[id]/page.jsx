@@ -35,13 +35,21 @@ import Property from "@/models/Property";
 import PropertyImages from "@/components/PropertyImages";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import { convertToSerializableObject } from "@/utils/convertToObject";
 
 const PropertyPage = async ({ params }) => {
     await connectDB();
 
     const param = await params;
 
-    const property = await Property.findById(param.id);
+    const propertyDoc = await Property.findById(param.id);
+
+    const property = convertToSerializableObject(propertyDoc);
+    if (!property) {
+      return (
+        <h1 className="text-center text-2xl font-bold mt-10">Property Not Found</h1>
+      )
+    }
 
     return (
       <>
