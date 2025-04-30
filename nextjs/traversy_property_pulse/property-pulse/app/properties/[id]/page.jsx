@@ -49,7 +49,6 @@ const PropertyPage = async ({ params }) => {
 
     const property = JSON.parse(JSON.stringify(propertyDoc));
     // const property = convertToSerializableObject(propertyDoc);
-    console.log("PROPERTY ****",property);
     if (!property) {
       return (
         <h1 className="text-center text-2xl font-bold mt-10">Property Not Found</h1>
