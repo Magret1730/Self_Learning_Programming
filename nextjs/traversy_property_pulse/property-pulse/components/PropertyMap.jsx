@@ -2,6 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { setDefaults, fromAddress } from "react-geocode";
+import Map, { Marker } from 'react-map-gl/mapbox';
+import 'mapbox-gl/dist/mapbox-gl.css';
+// import Map, { Marker } from "react-map-gl";
+import Image from "next/image";
+import pin from "@/assets/images/pin.svg";
+import Spinner from "./Spinner";
 
 const PropertyMap = ({property}) => {
   const [lat, setLat] = useState(null);  
@@ -9,7 +15,7 @@ const PropertyMap = ({property}) => {
   const [viewPort, setViewPort] = useState({
     latitude: 0,
     longitude: 0,
-    zoom: 12,
+    zoom: 15,
     width: '100%',
     height: '500px'
   });
@@ -57,12 +63,26 @@ const PropertyMap = ({property}) => {
     fetchCoords();
   }, []);
 
-  if (loading) return <h3>loading...</h3>
+  if (loading) return <Spinner />
 
   if (geoCodeError) return <div className="text-xl">No location data found</div>
 
   return ( 
-    <div>Map</div>
+    !loading && (
+      <Map
+        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+        initialViewState={{
+          longitude: lng,
+          latitude: lat,
+          zoom: 11
+        }}
+        style={{width: '100%', height: 500}}
+        mapStyle="mapbox://styles/mapbox/streets-v9">
+          <Marker longitude={lng} latitude={lat} anchor='bottom'>
+            <Image src={pin} alt='location' width={40} height={40}/>
+          </Marker>
+        </Map>
+    )
   );
 }
 
