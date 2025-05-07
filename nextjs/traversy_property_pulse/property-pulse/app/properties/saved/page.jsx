@@ -9,7 +9,6 @@ const SavedPropertiesPage = async () => {
   const {userId} = await getSessionUser();
 
   const { bookmarks } = await User.findById(userId).populate('bookmarks').lean();
-  console.log("BOOKMARKS SAVED PROPERTIES", bookmarks.length);
 
   return ( 
     <section className="px-4 py-6">

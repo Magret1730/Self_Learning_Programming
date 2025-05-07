@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { setDefaults, fromAddress } from "react-geocode";
-import Map, { Marker } from 'react-map-gl/mapbox';
+// import Map, { Marker } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
-// import Map, { Marker } from "react-map-gl";
+import Map, { Marker } from "react-map-gl";
 import Image from "next/image";
 import pin from "@/assets/images/pin.svg";
 import Spinner from "./Spinner";

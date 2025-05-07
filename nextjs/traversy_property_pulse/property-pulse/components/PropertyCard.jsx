@@ -20,6 +20,8 @@ const PropertyCard = ({ property }) => {
     }
   }
 
+  // console.log("PROPERTY ****", property._id);
+
   return ( 
     <div className="rounded-xl shadow-md relative">
       <img
