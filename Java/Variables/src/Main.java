@@ -10,8 +10,13 @@ public class Main {
         int intMinValue = Integer.MIN_VALUE; // This gives us min value that can be stored in int data type
         byte byteMaxValue = Byte.MAX_VALUE;  // This gives us max value that can be stored in byte data type
         byte byteMinValue = Byte.MIN_VALUE; // // This gives us min value that can be stored in byte data type
+        long longMaxValue = Long.MAX_VALUE; // This gives us max value that can be stored in long data type
+        long longMinValue = Long.MIN_VALUE; // This gives us min value that can be stored in long data type
 
         System.out.println("Max int value: " + intMaxValue + "\nMin int value: " + intMinValue);
         System.out.println("Max byte value: " + byteMaxValue + "\nMin byte value: " + byteMinValue);
+        System.out.println("Max long value: " + longMaxValue + "\nMin long value: " + longMinValue);
+
+        long myNum = 2147483648L; // Use "L" for long data types, if not the data type will be treated as int
     }
 }
