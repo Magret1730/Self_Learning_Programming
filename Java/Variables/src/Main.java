@@ -68,10 +68,10 @@ public class Main {
 
 //        System.out.println(myNumber);
 
-        myNumber = 0;
-//        System.out.println("Post incrementation" + myNumber++);
-//        System.out.println(myNumber);
+        myNumber = 5;
+//        System.out.println("Prefix incrementation" + myNumber--);
+//        System.out.println("Postfix incrementation" + myNumber++);
+//        System.out.println("Prefix decrementation" + --myNumber);
 //        System.out.println("Prefix incrementation" + ++myNumber);
-//        System.out.println(myNumber);
     }
 }
