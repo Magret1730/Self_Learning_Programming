@@ -60,19 +60,51 @@ public class Main {
 //        }
 
 //        int time = 1;
-        System.out.println("What is the time?");
-        int time = scanner.nextInt();
+//        System.out.println("What is the time?");
+//        int time = scanner.nextInt();
+//
+//        switch (time) {
+//            case 10:
+//                System.out.println("The time is " + time + "\nTime for the coffee.");
+//                break;
+//            case 12:
+//                System.out.println("The time is " + time + "\nTime for a run.");
+//                break;
+//            default:
+//                System.out.println("Time to relax");
+//                break;
+//        }
 
-        switch (time) {
-            case 10:
-                System.out.println("The time is " + time + "\nTime for the coffee.");
-                break;
-            case 12:
-                System.out.println("The time is " + time + "\nTime for a run.");
-                break;
-            default:
-                System.out.println("Time to relax");
-                break;
+//        System.out.println("What is the time?");
+//        int time = scanner.nextInt();
+
+        // Enhanced switch statement
+//        switch (time) {
+//            case 10 -> System.out.println("The time is " + time + "\nTime for the coffee.");
+//            case 12 -> System.out.println("The time is " + time + "\nTime for a run.");
+//            default -> System.out.println("Time to relax");
+//        }
+
+//        for (int i = 0; i <= 10; i++) {
+//            System.out.println("i = " + i);
+//        }
+
+//        for (int i = 10; i >= 1; i--) {
+//            System.out.println("i = " + i);
+//        }
+
+//        for (int i = 0; i <= 10; i++) {
+//            if (i == 5) {
+//                break;
+//            }
+//            System.out.println("i = " + i);
+//        }
+
+        for (int i = 0; i <= 10; i++) {
+            if (i >= 3 && i <= 5) {
+                continue;
+            }
+            System.out.println("i = " + i);
         }
     }
 }
