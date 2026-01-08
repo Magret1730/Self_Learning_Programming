@@ -116,5 +116,10 @@ public class Main {
 //        }
 
         // Do While execute the function at least once even if it is false
+        int number = 4;
+        do {
+            number--;
+            System.out.println(number);
+        } while (number >= 1);
     }
 }
