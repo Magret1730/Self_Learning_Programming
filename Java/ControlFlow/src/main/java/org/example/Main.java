@@ -100,11 +100,21 @@ public class Main {
 //            System.out.println("i = " + i);
 //        }
 
-        for (int i = 0; i <= 10; i++) {
-            if (i >= 3 && i <= 5) {
-                continue;
-            }
-            System.out.println("i = " + i);
-        }
+//        for (int i = 0; i <= 10; i++) {
+//            if (i >= 3 && i <= 5) {
+//                continue;
+//            }
+//            System.out.println("i = " + i);
+//        }
+
+//        // While loop = Don't know when to end the loop but until a condition is false or true
+//        int number = 0;
+//        while (number <= 10) {
+////            number++;
+//            ++number;
+//            System.out.println(number);
+//        }
+
+        // Do While execute the function at least once even if it is false
     }
 }
