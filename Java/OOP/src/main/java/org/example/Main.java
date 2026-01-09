@@ -9,6 +9,8 @@ public class Main {
         Car secondCar = new Car("Red", "Ford", "Mustang", 2);
         Car thirdCar = new Car();
         Car fourthCar = new Car("Blue");
+        InheritanceCar fifthCar =  new InheritanceCar("Yellow", "Tesla", "S Plaid", 4);
+        Plane plane = new Plane("Black", "Tesla", "S Plaid", 4, 7);
 
         firstCar.move();
         firstCar.stop();
@@ -33,5 +35,19 @@ public class Main {
         fourthCar.stop();
         System.out.println("Fourth Car Name: " + fourthCar.getName() + "\nFourth Car Color: " + fourthCar.getColor() + "\nFourth Car Model: " + fourthCar.getModel() + "\nFourth Car Doors: " + fourthCar.getDoors());
         System.out.println();
+
+        fifthCar.move();
+        fifthCar.stop();
+        System.out.println("Fifth Car Name: " + fifthCar.getName() + "\nFifth Car Color: " + fifthCar.getColor() + "\nFifth Car Model: " + fifthCar.getModel() + "\nFifth Car Doors: " + fifthCar.getDoors());
+        System.out.println();
+
+        plane.move();
+        plane.stop();
+        System.out.println("Plane Name: " + plane.getName() + "\nPlane Color: " + plane.getColor() + "\nPlane Model: " + plane.getModel() + "\nPlane Doors: " + plane.getDoors() + "\nPlane Engines: " + plane.getEngines());
+        System.out.println();
+
+        InheritanceCar.displayData();
+        String test = InheritanceCar.TEST;
+        System.out.println(test);
     }
 }
