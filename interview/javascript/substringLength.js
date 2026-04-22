@@ -1,3 +1,8 @@
+// Question
+// Problem: Longest Substring Without Repeating Characters
+// Given a string s, find the length of the longest substring without repeating characters.
+
+
 // Pseudocode
 // Create a varibale to keep lengthSubstring and initialize to 0
 // If substring does not includes s[i], push s[i] to substring
